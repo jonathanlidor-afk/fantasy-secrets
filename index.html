@@ -5,29 +5,97 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fantasy Secrets - Pokemon Card & Tabletop Gear Guides</title>
 <meta name="description" content="Buying guides and reviews for Pokemon card protection, D&D dice, and tabletop accessories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body{font-family:Georgia,serif;max-width:760px;margin:0 auto;padding:40px 20px;background:#1a1330;color:#f0ead6;line-height:1.7}
-h1{color:#e0c068;font-size:2.2em;margin-bottom:0}
-.tagline{color:#b0a0d0;margin-top:4px;margin-bottom:40px}
-article{background:#241a3d;border-radius:10px;padding:24px;margin-bottom:20px}
-a{color:#e0c068;text-decoration:none}
-a:hover{text-decoration:underline}
-footer{margin-top:60px;color:#8878a8;font-size:0.85em}
+:root{--bg:#180f2e;--card:#241a3d;--card2:#2c2049;--gold:#e0c068;--gold2:#f2d48a;--text:#f0ead6;--muted:#b0a0d0}
+*{box-sizing:border-box}
+body{font-family:'Nunito Sans',sans-serif;max-width:900px;margin:0 auto;padding:0 20px 60px;background:var(--bg);color:var(--text);line-height:1.7}
+header{display:flex;align-items:center;justify-content:space-between;padding:24px 0;border-bottom:1px solid #3a2d5c}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Cinzel',serif;font-weight:700;font-size:1.4em;color:var(--gold2)}
+nav a{color:var(--muted);text-decoration:none;margin-left:24px;font-weight:600;font-size:0.95em}
+nav a:hover{color:var(--gold)}
+.hero{display:flex;align-items:center;gap:28px;padding:48px 0 40px;border-bottom:1px solid #3a2d5c;margin-bottom:36px}
+.hero h1{font-family:'Cinzel',serif;font-size:2.1em;color:var(--gold2);margin:0 0 8px}
+.hero p{color:var(--muted);margin:0;max-width:480px}
+.avatar{flex-shrink:0}
+grid{display:grid}
+.cards{display:grid;gap:20px}
+article.card{background:var(--card);border:1px solid #3a2d5c;border-radius:14px;padding:22px;display:flex;gap:18px;align-items:flex-start;transition:border-color .15s}
+article.card:hover{border-color:var(--gold)}
+.thumb{flex-shrink:0;width:72px;height:72px;background:var(--card2);border-radius:10px;display:flex;align-items:center;justify-content:center}
+article.card h2{margin:0 0 6px;font-size:1.15em}
+article.card h2 a{color:var(--gold2);text-decoration:none}
+article.card h2 a:hover{text-decoration:underline}
+article.card p{margin:0;color:var(--muted);font-size:0.95em}
+.author{display:flex;align-items:center;gap:14px;margin-top:48px;padding:20px;background:var(--card);border-radius:12px;border:1px solid #3a2d5c}
+.author p{margin:0;color:var(--muted);font-size:0.9em}
+.author strong{color:var(--gold2)}
+footer{margin-top:40px;color:#8878a8;font-size:0.85em;border-top:1px solid #3a2d5c;padding-top:20px}
+@media(max-width:600px){.hero{flex-direction:column;text-align:center}article.card{flex-direction:column;text-align:center}.thumb{margin:0 auto}}
 </style>
 </head>
 <body>
-<h1>Fantasy Secrets</h1>
-<p class="tagline">Guides for protecting, organizing, and upgrading your Pokemon cards and tabletop gear.</p>
 
-<article>
+<header>
+<div class="logo">
+<svg width="28" height="28" viewBox="0 0 40 40"><polygon points="20,3 35,12 35,28 20,37 5,28 5,12" fill="none" stroke="#e0c068" stroke-width="2"/><polygon points="20,10 29,15 29,25 20,30 11,25 11,15" fill="#e0c068" opacity="0.85"/></svg>
+Fantasy Secrets
+</div>
+<nav><a href="#">Articles</a><a href="#about">About</a></nav>
+</header>
+
+<section class="hero">
+<div class="avatar">
+<svg width="96" height="96" viewBox="0 0 96 96">
+<circle cx="48" cy="48" r="46" fill="#2c2049" stroke="#e0c068" stroke-width="1.5"/>
+<circle cx="48" cy="40" r="16" fill="#d9a679"/>
+<path d="M30 78c0-14 8-24 18-24s18 10 18 24" fill="#4a3a6a"/>
+<path d="M30 32c2-10 10-16 18-16s16 6 18 16c-6-4-12-6-18-6s-12 2-18 6z" fill="#3a2d1f"/>
+<circle cx="42" cy="40" r="2" fill="#241a3d"/>
+<circle cx="54" cy="40" r="2" fill="#241a3d"/>
+<path d="M44 47q4 3 8 0" fill="none" stroke="#241a3d" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+</div>
+<div>
+<h1>Fantasy Secrets</h1>
+<p>Practical, tested guides for protecting your Pokemon cards and upgrading your tabletop gear - no fluff, just what actually works.</p>
+</div>
+</section>
+
+<div class="cards">
+
+<article class="card">
+<div class="thumb">
+<svg width="40" height="40" viewBox="0 0 40 40"><rect x="6" y="4" width="20" height="28" rx="3" fill="#e0c068" opacity="0.25" transform="rotate(-8 16 18)"/><rect x="12" y="6" width="20" height="28" rx="3" fill="#e0c068"/><rect x="16" y="11" width="12" height="18" rx="1.5" fill="#241a3d"/></svg>
+</div>
+<div>
 <h2><a href="articles/dice-trays.html">Do You Actually Need a Dice Tray?</a></h2>
 <p>Trays vs mats vs towers - what actually changes about your rolls, your table, and your dice.</p>
+</div>
 </article>
 
-<article>
-<h2><a href="articles/pokemon-sleeves.html">How to Actually Protect Your Pokemon Cards: A Sleeve Buying Guide</a></h2>
+<article class="card">
+<div class="thumb">
+<svg width="40" height="40" viewBox="0 0 40 40"><rect x="8" y="6" width="24" height="28" rx="3" fill="#e0c068"/><rect x="12" y="11" width="16" height="18" rx="1.5" fill="#241a3d"/><circle cx="20" cy="20" r="4" fill="#e0c068"/></svg>
+</div>
+<div>
+<h2><a href="articles/pokemon-sleeves.html">How to Actually Protect Your Pokemon Cards</a></h2>
 <p>Toploaders, penny sleeves, and card savers explained - what actually prevents warping and wear.</p>
+</div>
 </article>
+
+</div>
+
+<div class="author" id="about">
+<svg width="48" height="48" viewBox="0 0 96 96" style="flex-shrink:0">
+<circle cx="48" cy="48" r="46" fill="#2c2049" stroke="#e0c068" stroke-width="1.5"/>
+<circle cx="48" cy="40" r="16" fill="#d9a679"/>
+<path d="M30 78c0-14 8-24 18-24s18 10 18 24" fill="#4a3a6a"/>
+<path d="M30 32c2-10 10-16 18-16s16 6 18 16c-6-4-12-6-18-6s-12 2-18 6z" fill="#3a2d1f"/>
+</svg>
+<p><strong>Written by the Fantasy Secrets team</strong> - lifelong tabletop players and card collectors who got tired of guides written by people who clearly don't own the gear.</p>
+</div>
 
 <footer>
 <p>Fantasy Secrets contains affiliate links. We may earn a commission on purchases made through these links, at no extra cost to you.</p>
